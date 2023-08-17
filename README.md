@@ -33,6 +33,7 @@ Depuración y registro: console.log es una herramienta esencial para depurar tu 
 
 Interacción con el usuario: alert te permite interactuar con el usuario mostrando mensajes importantes, advertencias o solicitudes de confirmación. Por ejemplo, puedes usar alert para asegurarte de que el usuario esté consciente de cierta información antes de realizar una acción crítica.
 
+
 Comunicación en tiempo real: Ambas funciones son valiosas para comunicarse con el usuario o para proporcionar información durante la ejecución del programa, ya sea en el desarrollo o en la producción.
 
 En resumen, console.log y alert son herramientas fundamentales en el arsenal de un desarrollador de JavaScript. Ayudan a comprender el flujo de ejecución, a depurar problemas y a interactuar con los usuarios de manera efectiva.
