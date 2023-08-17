@@ -189,7 +189,7 @@ salary: El nombre de la variable.
  <!-- Titulo -->
     <h1>Ejercicios JavaScript nivel 1</h1>
 ```
-<h1>: Etiqueta HTML que define un encabezado de nivel 1, es decir, un título principal.
+h1: Etiqueta HTML que define un encabezado de nivel 1, es decir, un título principal.
 Ejercicios JavaScript nivel 1: El texto que se mostrará dentro del encabezado. En este caso, es "Ejercicios JavaScript nivel 1"
   
 ```
@@ -200,11 +200,11 @@ Ejercicios JavaScript nivel 1: El texto que se mostrará dentro del encabezado. 
       <li><a href="./exercises3.html">Ejercicios nivel 3</a></li>
     </ul>
 ```
-<ul>: Etiqueta que define una lista no ordenada.
-<li>: Etiqueta que define un elemento de lista.
-<a href="./index.html">Volver a Home</a>: Un enlace (<a>) que apunta al archivo index.html y muestra el texto "Volver a Home".
-<a href="./exercises2.html">Ejercicios nivel 2</a>: Otro enlace que apunta al archivo exercises2.html y muestra "Ejercicios nivel 2".
-<a href="./exercises3.html">Ejercicios nivel 3</a>: Otro enlace que apunta al archivo exercises3.html y muestra "Ejercicios nivel 3".
+ul: Etiqueta que define una lista no ordenada.
+li: Etiqueta que define un elemento de lista.
+a href="./index.html">Volver a Home /a: Un enlace (a) que apunta al archivo index.html y muestra el texto "Volver a Home".
+a href="./exercises2.html">Ejercicios nivel 2/a: Otro enlace que apunta al archivo exercises2.html y muestra "Ejercicios nivel 2".
+a href="./exercises3.html">Ejercicios nivel 3/a: Otro enlace que apunta al archivo exercises3.html y muestra "Ejercicios nivel 3".
 
 ```
     <!-- Scripts -->
@@ -212,7 +212,7 @@ Ejercicios JavaScript nivel 1: El texto que se mostrará dentro del encabezado. 
     <script src="./js/level_1/exercise02.js"></script>
 ```
 
-<script>: Etiqueta que se usa para incluir scripts (código JavaScript) en la página.
+script: Etiqueta que se usa para incluir scripts (código JavaScript) en la página.
 src="./js/level_1/exercise01.js": Atributo src que especifica la ubicación del archivo JavaScript exercise01.js en la carpeta js/level_1.
 src="./js/level_1/exercise02.js": Atributo src que especifica la ubicación del archivo JavaScript exercise02.js en la carpeta js/level_1.
 
