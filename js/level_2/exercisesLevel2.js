@@ -10,7 +10,7 @@
  */
 function exerciseOne() {
   // El prompt nos permite ingresar datos por medio del navegador
-  let userName = prompt("Ingrese su nombre");
+  const userName = prompt("Ingrese su nombre");
   alert("Tu nombre de usuario ingresado es: " + userName);
 }
 
