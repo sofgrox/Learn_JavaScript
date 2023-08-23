@@ -94,9 +94,9 @@ function ejercicioCuatro() {
   const dni = prompt("Ingrese tu cedula");
   const age = parseInt(prompt("Ingresa tu edad"));
   // etiquetas H2 a sobrescribir en el HTML
-  const userNameHtml = document.getElementById("userName");
-  const dniHtml = document.getElementById("dni");
-  const ageHtml = document.getElementById("age");
+  const userNameHtml = document.getElementById("userName2");
+  const dniHtml = document.getElementById("dni2");
+  const ageHtml = document.getElementById("age2");
   // Guardar datos en HTML
   userNameHtml.innerHTML = "Tu nombre es: " + userName;
   dniHtml.innerHTML = "Tu cédula es: " + dni;
