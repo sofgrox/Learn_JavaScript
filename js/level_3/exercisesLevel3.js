@@ -2,6 +2,7 @@
 const btnExerciseOne = document.getElementById("btnExercise1");
 const btnExerciseTwo = document.getElementById("btnExercise2");
 const btnExerciseThree = document.getElementById("btnExercise3");
+const btnExerciseFour = document.getElementById("btnExercise4");
 
 /**
  * Ejercicio 1:
@@ -88,20 +89,19 @@ function ejercicioTres() {
  * LocalStorage
  */
 function ejercicioCuatro() {
-   // Datos ingresadas por el usuario
-   const userName = prompt("Ingresa tu nombre");
-   const dni = prompt("Ingrese tu cedula");
-   const age = parseInt(prompt("Ingresa tu edad"));
-   // etiquetas H2 a sobrescribir en el HTML
-   const userNameHtml = document.getElementById("userName");
-   const dniHtml = document.getElementById("dni");
-   const ageHtml = document.getElementById("age");
-   // Guardar datos en HTML
-   userNameHtml.innerHTML = "Tu nombre es: " + userName;
-   dniHtml.innerHTML = "Tu cédula es: " + dni;
-   ageHtml.innerHTML = "Tu edad es: " + age;
+  // Datos ingresadas por el usuario
+  const userName = prompt("Ingresa tu nombre");
+  const dni = prompt("Ingrese tu cedula");
+  const age = parseInt(prompt("Ingresa tu edad"));
+  // etiquetas H2 a sobrescribir en el HTML
+  const userNameHtml = document.getElementById("userName");
+  const dniHtml = document.getElementById("dni");
+  const ageHtml = document.getElementById("age");
+  // Guardar datos en HTML
+  userNameHtml.innerHTML = "Tu nombre es: " + userName;
+  dniHtml.innerHTML = "Tu cédula es: " + dni;
+  ageHtml.innerHTML = "Tu edad es: " + age;
 }
-
 
 /**
  * Eventos click
@@ -115,4 +115,7 @@ btnExerciseTwo.onclick = function () {
 };
 btnExerciseThree.onclick = function () {
   ejercicioTres();
+};
+btnExerciseFour.onclick = function () {
+  ejercicioCuatro();
 };
