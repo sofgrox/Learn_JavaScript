@@ -9,3 +9,4 @@
  */
 console.log("Hola JavaScript"); // Mensaje en consola del navegador
 alert("Hola JavaScript"); // Mensaje de alerta en el navegador
+confirm("¿Quieres aprender JavaScript?"); // Ventana de alerta que solicita confirmacion

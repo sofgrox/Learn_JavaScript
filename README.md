@@ -216,4 +216,6 @@ script: Etiqueta que se usa para incluir scripts (código JavaScript) en la pág
 src="./js/level_1/exercise01.js": Atributo src que especifica la ubicación del archivo JavaScript exercise01.js en la carpeta js/level_1.
 src="./js/level_1/exercise02.js": Atributo src que especifica la ubicación del archivo JavaScript exercise02.js en la carpeta js/level_1.
 
-
+// LocalStorage
+// arrowFunction
+// Date

@@ -83,6 +83,25 @@ function ejercicioTres() {
   dniHtml.innerHTML = "Tu cédula es: " + dni;
   ageHtml.innerHTML = "Tu edad es: " + age;
 }
+/**
+ * Ejercicio 4
+ * LocalStorage
+ */
+function ejercicioCuatro() {
+   // Datos ingresadas por el usuario
+   const userName = prompt("Ingresa tu nombre");
+   const dni = prompt("Ingrese tu cedula");
+   const age = parseInt(prompt("Ingresa tu edad"));
+   // etiquetas H2 a sobrescribir en el HTML
+   const userNameHtml = document.getElementById("userName");
+   const dniHtml = document.getElementById("dni");
+   const ageHtml = document.getElementById("age");
+   // Guardar datos en HTML
+   userNameHtml.innerHTML = "Tu nombre es: " + userName;
+   dniHtml.innerHTML = "Tu cédula es: " + dni;
+   ageHtml.innerHTML = "Tu edad es: " + age;
+}
+
 
 /**
  * Eventos click
