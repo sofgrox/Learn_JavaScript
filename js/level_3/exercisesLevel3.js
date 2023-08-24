@@ -92,13 +92,18 @@ function ejercicioTres() {
 
 if (localStorage.getItem("userName")) {
   const userNameHtml = document.getElementById("userName2");
+  const dniHtml = document.getElementById("dni2");
+  const ageHtml = document.getElementById("age2");
   userNameHtml.innerHTML = "Tu nombre es: " + localStorage.getItem("userName");
+  dniHtml.innerHTML = "Tu cedula es: " + localStorage.getItem("dni");
+  ageHtml.innerHTML = "Tu edad es: " + localStorage.getItem("age");
 } 
 function ejercicioCuatro() {
   // Datos ingresadas por el usuario
   const userName = prompt("Ingresa tu nombre");
   const dni = prompt("Ingrese tu cedula");
   const age = parseInt(prompt("Ingresa tu edad"));
+  
   // etiquetas H2 a sobrescribir en el HTML
   const userNameHtml = document.getElementById("userName2");
   const dniHtml = document.getElementById("dni2");
@@ -106,9 +111,12 @@ function ejercicioCuatro() {
  
   // Guardar datos en HTML
   userNameHtml.innerHTML = "Tu nombre es: " + userName;
-  localStorage.setItem("userName", userName);
   dniHtml.innerHTML = "Tu cédula es: " + dni;
   ageHtml.innerHTML = "Tu edad es: " + age;
+  // LocalStorage
+  localStorage.setItem("userName", userName); 
+  localStorage.setItem("dni", dni); 
+  localStorage.setItem("age", age);
 }
 
 /**
