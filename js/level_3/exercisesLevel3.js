@@ -88,6 +88,12 @@ function ejercicioTres() {
  * Ejercicio 4
  * LocalStorage
  */
+// LocalStorage para el ejercicio 4
+
+if (localStorage.getItem("userName")) {
+  const userNameHtml = document.getElementById("userName2");
+  userNameHtml.innerHTML = "Tu nombre es: " + localStorage.getItem("userName");
+} 
 function ejercicioCuatro() {
   // Datos ingresadas por el usuario
   const userName = prompt("Ingresa tu nombre");
@@ -97,8 +103,10 @@ function ejercicioCuatro() {
   const userNameHtml = document.getElementById("userName2");
   const dniHtml = document.getElementById("dni2");
   const ageHtml = document.getElementById("age2");
+ 
   // Guardar datos en HTML
   userNameHtml.innerHTML = "Tu nombre es: " + userName;
+  localStorage.setItem("userName", userName);
   dniHtml.innerHTML = "Tu cédula es: " + dni;
   ageHtml.innerHTML = "Tu edad es: " + age;
 }
