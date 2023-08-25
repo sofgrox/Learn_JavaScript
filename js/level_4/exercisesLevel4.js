@@ -1,5 +1,6 @@
 const btnExerciseOne = document.getElementById("btnExercise1");
 const btnExerciseTwo = document.getElementById("btnExercise2");
+const btnExerciseThree = document.getElementById("btnExercise3");
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -38,17 +39,27 @@ function ejercicioDos() {
       espacio = "";
 
       // Poner espacios en blanco
-      for (let j = 0; j < niveles - i; j++) { // porque aqui hay un -i
+      for (let j = 0; j < niveles - i; j++) {
+        // porque aqui hay un -i
         espacio += " ";
       }
 
       // Poner asteriscos
-      for (let k = 0; k < 2 * i - 1; k++) { // porque esta esa formula loca matematica y el -1
+      for (let k = 0; k < 2 * i - 1; k++) {
+        // porque esta esa formula loca matematica y el -1
         espacio += "*";
       }
 
       console.log(espacio);
     }
+  }
+}
+
+function ejercicioTres() {
+  const tabla = parseInt(prompt("Ingrese el numero de la tabla que desea ver"));
+
+  for (let i = 1; i <= 10; i++) {
+    console.log(tabla + " X " + i + " = " + tabla * i);
   }
 }
 
@@ -61,4 +72,7 @@ btnExerciseOne.onclick = function () {
 };
 btnExerciseTwo.onclick = function () {
   ejercicioDos();
+};
+btnExerciseThree.onclick = function () {
+  ejercicioTres();
 };
