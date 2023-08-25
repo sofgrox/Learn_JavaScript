@@ -1,16 +1,55 @@
 const btnExerciseOne = document.getElementById("btnExercise1");
+const btnExerciseTwo = document.getElementById("btnExercise2");
 /**
  * Ejercicio 1:
  * Ciclo FOR
  */
 function ejercicioUno() {
-  let escalones = 5;
-  let piramide = "";
-  // index siempre inicia en 0  -  i = i + 1
-  for (let i = 0; i < escalones; i++) {
-    piramide = piramide + "*";
+  const asteriscos = parseInt(prompt("Ingresa el numero de asteriscos"));
+  let resultado = "";
+
+  if (asteriscos > 100) {
+    return alert("Ingresa un dato menos a 100");
   }
-  console.log(piramide);
+  // index siempre inicia en 0  -  i = i + 1
+  for (let i = 0; i < asteriscos; i++) {
+    resultado += "*";
+  }
+  console.log(resultado);
+}
+/**
+ * ejercicio 2
+ * FOR - Piramide
+ */
+function ejercicioDos() {
+  // Pedir los niveles
+  const niveles = parseInt(prompt("Ingrese los niveles de la piramide"));
+  // validar limite de niveles
+  if (niveles > 20) {
+    return alert("Debe ser un rango de 20 o menor");
+  }
+  // Validamos si es diferente a un numero
+  if (isNaN(niveles)) {
+    alert("Favor ingrese un numero del 1 al 20");
+  } else {
+    let espacio = ""; // asigna espacio en la piramide
+    // Colocar niveles
+    for (let i = 0; i < niveles; i++) {
+      espacio = "";
+
+      // Poner espacios en blanco
+      for (let j = 0; j < niveles - i; j++) { // porque aqui hay un -i
+        espacio += " ";
+      }
+
+      // Poner asteriscos
+      for (let k = 0; k < 2 * i - 1; k++) { // porque esta esa formula loca matematica y el -1
+        espacio += "*";
+      }
+
+      console.log(espacio);
+    }
+  }
 }
 
 /**
@@ -19,4 +58,7 @@ function ejercicioUno() {
  */
 btnExerciseOne.onclick = function () {
   ejercicioUno();
+};
+btnExerciseTwo.onclick = function () {
+  ejercicioDos();
 };
