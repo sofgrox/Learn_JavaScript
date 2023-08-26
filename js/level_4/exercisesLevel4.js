@@ -78,12 +78,19 @@ function ejercicioCuatro() {
   //console.log(animales);
   //console.log(animales[2]);
   // Recorrer Array
-
+  let animal = "";
+  let validar = "";
   for (let i = 0; i < animales.length; i++) {
-    let animal = animales[i];
+    animal = animales[i];
     if (animal === "Lobo") {
-      return alert("Si esta el animal");
+      validar = "si";
     }
+    
+  }
+  if (validar === "si") {
+    alert("Si esta el animal"); 
+  } else {
+    alert("No esta el animal en la lista");
   }
 }
 
