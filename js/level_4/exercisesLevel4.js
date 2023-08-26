@@ -73,9 +73,20 @@ function ejercicioCuatro() {
   // Lista de animales
   const animales = ["Perro", "Gato", "Lobo", "Serpiente", "Conejo"];
   // Mostrar el contenido del array
-  alert("Lista de animales: " + animales)
-  alert("Cantidad de animales: " + animales.length)
+  alert("Lista de animales: " + animales);
+  alert("Cantidad de animales: " + animales.length); // 5
   console.log(animales);
+  console.log(animales[2]);
+  // Recorrer Array
+  /**
+  for (let i = 0; i < animales.length; i++) {
+    if (condition) {
+      
+    } else {
+      
+    }
+  }
+  */
 }
 
 /**
