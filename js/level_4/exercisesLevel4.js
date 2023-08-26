@@ -1,6 +1,8 @@
 const btnExerciseOne = document.getElementById("btnExercise1");
 const btnExerciseTwo = document.getElementById("btnExercise2");
 const btnExerciseThree = document.getElementById("btnExercise3");
+const btnExerciseFour = document.getElementById("btnExercise4");
+
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -64,6 +66,19 @@ function ejercicioTres() {
 }
 
 /**
+ * Ejercicio 4
+ * Array
+ */
+function ejercicioCuatro() {
+  // Lista de animales
+  const animales = ["Perro", "Gato", "Lobo", "Serpiente", "Conejo"];
+  // Mostrar el contenido del array
+  alert("Lista de animales: " + animales)
+  alert("Cantidad de animales: " + animales.length)
+  console.log(animales);
+}
+
+/**
  * Eventos click
  * es lo mismo que tener en el html onclick="exerciseOne()"
  */
@@ -75,4 +90,7 @@ btnExerciseTwo.onclick = function () {
 };
 btnExerciseThree.onclick = function () {
   ejercicioTres();
+};
+btnExerciseFour.onclick = function () {
+  ejercicioCuatro();
 };
