@@ -2,7 +2,7 @@ const btnExerciseOne = document.getElementById("btnExercise1");
 const btnExerciseTwo = document.getElementById("btnExercise2");
 const btnExerciseThree = document.getElementById("btnExercise3");
 const btnExerciseFour = document.getElementById("btnExercise4");
-
+const btnExerciseFive = document.getElementById("btnExercise5");
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -79,19 +79,26 @@ function ejercicioCuatro() {
   //console.log(animales[2]);
   // Recorrer Array
   let animal = "";
-  let validar = "";
+  let encontro = false;
   for (let i = 0; i < animales.length; i++) {
     animal = animales[i];
     if (animal === "Lobo") {
-      validar = "si";
+      encontro = true;
+      return alert("Si esta el animal");
     }
-    
   }
-  if (validar === "si") {
-    alert("Si esta el animal"); 
-  } else {
+  if (!encontro) {
     alert("No esta el animal en la lista");
   }
+}
+
+function ejercicioCinco() {
+  const animales = ["Perro", "Gato", "Lobo", "Serpiente", "Conejo"];
+
+  // Cuando necesitamos recoorrer todo el array
+  animales.forEach((e) => {
+    console.log(e);
+  });
 }
 
 /**
@@ -109,4 +116,7 @@ btnExerciseThree.onclick = function () {
 };
 btnExerciseFour.onclick = function () {
   ejercicioCuatro();
+};
+btnExerciseFive.onclick = function () {
+  ejercicioCinco();
 };
