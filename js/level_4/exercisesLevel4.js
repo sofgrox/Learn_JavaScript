@@ -104,7 +104,37 @@ function ejercicioCinco() {
 
 function ejercicioSeis() {
   // Array de 6 personas
-  const personas = ["Pepita", "Pepito", "Juanita" , "Juanito", "Pepe", "Pepa"]
+  const personas = ["Pepita", "Pepito", "Juanita", "Juanito", "Pepe", "Pepa"];
+  console.log("Paso 1", personas);
+  // Agregar persona nueva en el array (en la ultima posicion)
+  personas.push("Paco");
+  console.log("Paso 2", personas);
+  personas.push("Sara");
+  console.log("Paso 3", personas);
+  // Eliminar el ultimo elemento de un array
+  personas.pop();
+  console.log("Paso 4", personas);
+  // Agregar elemento al inicio del array
+  personas.unshift("Karen");
+  console.log("Paso 5", personas);
+  // Eliminar el primer elemento de un array
+  personas.shift();
+  console.log("Paso 6", personas);
+  // Eliminar un elemento cualquiera del array
+  personas.splice(3, 2);
+  console.log("Paso 7", personas);
+  // 
+  delete personas[2];
+  console.log("Paso 7", personas);
+
+  // Repaso
+  personas.forEach((t) => {
+    console.log(t);
+  });
+
+  for (let i = 0; i < personas.length; i++) {
+    console.log(personas[i]);
+  }
 }
 
 /**
