@@ -3,6 +3,7 @@ const btnExerciseTwo = document.getElementById("btnExercise2");
 const btnExerciseThree = document.getElementById("btnExercise3");
 const btnExerciseFour = document.getElementById("btnExercise4");
 const btnExerciseFive = document.getElementById("btnExercise5");
+const btnExerciseSix = document.getElementById("btnExercise6");
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -101,6 +102,11 @@ function ejercicioCinco() {
   });
 }
 
+function ejercicioSeis() {
+  // Array de 6 personas
+  const personas = ["Pepita", "Pepito", "Juanita" , "Juanito", "Pepe", "Pepa"]
+}
+
 /**
  * Eventos click
  * es lo mismo que tener en el html onclick="exerciseOne()"
@@ -119,4 +125,7 @@ btnExerciseFour.onclick = function () {
 };
 btnExerciseFive.onclick = function () {
   ejercicioCinco();
+};
+btnExerciseSix.onclick = function () {
+  ejercicioSeis();
 };
