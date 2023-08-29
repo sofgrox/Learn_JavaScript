@@ -197,7 +197,14 @@ function ejercicioOcho() {
  * Do While
  */
 function ejercicioNueve() {
-  alert("Entro 9");
+  // respuesta correcta
+  let respuesta = prompt("Ingresa la capital del quindio");
+  respuesta = respuesta.toLowerCase();
+
+  while (respuesta !== "armenia") {
+    alert("Intentalo de nuevo");
+    respuesta = prompt("Ingresa la capital del quindio").toLowerCase();
+  }
 }
 
 /**
