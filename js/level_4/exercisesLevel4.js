@@ -127,7 +127,15 @@ function ejercicioSeis() {
   // delete personas[2]; (NO UTILIZAR)
 
   // Nuevo array
-  const colores = ["Amarillo", "Gris", "Negro", "Blanco", "Rojo", "Verde", "Azul"]
+  const colores = [
+    "Amarillo",
+    "Gris",
+    "Negro",
+    "Blanco",
+    "Rojo",
+    "Verde",
+    "Azul",
+  ];
   const nuevoArray = personas.concat(colores);
   console.log("Paso 8", nuevoArray);
 
@@ -137,15 +145,16 @@ function ejercicioSeis() {
   });
 
   for (let i = 0; i < personas.length; i++) {
-    console.log("for normal ",personas[i]);
+    console.log("for normal ", personas[i]);
   }
 }
-
 
 function ejercicioSiete() {
   // Array
   const personas = ["Pepita", "Pepito", "Juanita", "Juanito", "Pepe", "Pepa"];
   // Mostrar todas las personas en el HTML
+  const listaPersonas = document.getElementById("personas");
+  listaPersonas.innerHTML = "Lista personas: " + personas;
 }
 
 /**
