@@ -155,6 +155,13 @@ function ejercicioSiete() {
   // Mostrar todas las personas en el HTML
   const listaPersonas = document.getElementById("personas");
   listaPersonas.innerHTML = "Lista personas: " + personas;
+
+  // Mostrar persona por persona
+  const listaPersonasDiv = document.getElementById("listaPersonas");
+  let listaPersonasHtml = "";
+  personas.forEach((e) => {
+    listaPersonasHtml += "<h2></h2>";
+  });
 }
 
 /**
