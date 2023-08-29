@@ -175,11 +175,25 @@ function ejercicioSiete() {
  * While
  */
 function ejercicioOcho() {
-  alert("Entro 8");
+  let contador = 0;
+
+  while (contador < 10) {
+    console.log(`Numero : ${contador}`);
+    contador++; // contador = contador + 1
+  }
+
+  // respuesta correcta
+  let respuesta = prompt("Ingresa la capital del quindio");
+  respuesta = respuesta.toLowerCase();
+
+  while (respuesta !== "armenia") {
+    alert("Intentalo de nuevo");
+    respuesta = prompt("Ingresa la capital del quindio").toLowerCase();
+  }
 }
 
 /**
- * ejercicio 8:
+ * ejercicio 9:
  * Do While
  */
 function ejercicioNueve() {
@@ -214,7 +228,6 @@ btnExerciseSeven.onclick = function () {
 btnExerciseEight.onclick = function () {
   ejercicioOcho();
 };
-
 btnExerciseNine.onclick = function () {
   ejercicioNueve();
 };
