@@ -156,12 +156,15 @@ function ejercicioSiete() {
   const listaPersonas = document.getElementById("personas");
   listaPersonas.innerHTML = "Lista personas: " + personas;
 
-  // Mostrar persona por persona
+  // Mostrar persona por persona (interpolacion)
   const listaPersonasDiv = document.getElementById("listaPersonas");
   let listaPersonasHtml = "";
+  let separadores = ""
   personas.forEach((e) => {
-    listaPersonasHtml += "<h2></h2>";
+    separadores += '<h2 style="color:red">-----</h2>';
+    listaPersonasHtml += `<h2> ${e} </h2>`;   
   });
+  listaPersonasDiv.innerHTML = listaPersonasHtml + separadores
 }
 
 /**
