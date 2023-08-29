@@ -5,6 +5,9 @@ const btnExerciseFour = document.getElementById("btnExercise4");
 const btnExerciseFive = document.getElementById("btnExercise5");
 const btnExerciseSix = document.getElementById("btnExercise6");
 const btnExerciseSeven = document.getElementById("btnExercise7");
+const btnExerciseEight = document.getElementById("btnExercise8");
+const btnExerciseNine = document.getElementById("btnExercise9");
+
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -159,12 +162,28 @@ function ejercicioSiete() {
   // Mostrar persona por persona (interpolacion)
   const listaPersonasDiv = document.getElementById("listaPersonas");
   let listaPersonasHtml = "";
-  let separadores = ""
+  let separadores = "";
   personas.forEach((e) => {
     separadores += '<h2 style="color:red">-----</h2>';
-    listaPersonasHtml += `<h2> ${e} </h2>`;   
+    listaPersonasHtml += `<h2> ${e} </h2>`;
   });
-  listaPersonasDiv.innerHTML = listaPersonasHtml + separadores
+  listaPersonasDiv.innerHTML = listaPersonasHtml + separadores;
+}
+
+/**
+ * ejercicio 8:
+ * While
+ */
+function ejercicioOcho() {
+  alert("Entro 8");
+}
+
+/**
+ * ejercicio 8:
+ * Do While
+ */
+function ejercicioNueve() {
+  alert("Entro 9");
 }
 
 /**
@@ -191,4 +210,11 @@ btnExerciseSix.onclick = function () {
 };
 btnExerciseSeven.onclick = function () {
   ejercicioSiete();
+};
+btnExerciseEight.onclick = function () {
+  ejercicioOcho();
+};
+
+btnExerciseNine.onclick = function () {
+  ejercicioNueve();
 };
