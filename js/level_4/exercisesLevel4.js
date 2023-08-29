@@ -4,6 +4,7 @@ const btnExerciseThree = document.getElementById("btnExercise3");
 const btnExerciseFour = document.getElementById("btnExercise4");
 const btnExerciseFive = document.getElementById("btnExercise5");
 const btnExerciseSix = document.getElementById("btnExercise6");
+const btnExerciseSeven = document.getElementById("btnExercise7");
 /**
  * Ejercicio 1:
  * Ciclo FOR
@@ -127,9 +128,8 @@ function ejercicioSeis() {
 
   // Nuevo array
   const colores = ["Amarillo", "Gris", "Negro", "Blanco", "Rojo", "Verde", "Azul"]
-
-  
-  console.log("Paso 7", personas);
+  const nuevoArray = personas.concat(colores);
+  console.log("Paso 8", nuevoArray);
 
   // Repaso
   personas.forEach((t) => {
@@ -139,6 +139,13 @@ function ejercicioSeis() {
   for (let i = 0; i < personas.length; i++) {
     console.log("for normal ",personas[i]);
   }
+}
+
+
+function ejercicioSiete() {
+  // Array
+  const personas = ["Pepita", "Pepito", "Juanita", "Juanito", "Pepe", "Pepa"];
+  // Mostrar todas las personas en el HTML
 }
 
 /**
@@ -162,4 +169,7 @@ btnExerciseFive.onclick = function () {
 };
 btnExerciseSix.onclick = function () {
   ejercicioSeis();
+};
+btnExerciseSeven.onclick = function () {
+  ejercicioSiete();
 };
