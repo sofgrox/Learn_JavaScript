@@ -123,17 +123,21 @@ function ejercicioSeis() {
   // Eliminar un elemento cualquiera del array
   personas.splice(3, 2);
   console.log("Paso 7", personas);
-  // 
-  delete personas[2];
+  // delete personas[2]; (NO UTILIZAR)
+
+  // Nuevo array
+  const colores = ["Amarillo", "Gris", "Negro", "Blanco", "Rojo", "Verde", "Azul"]
+
+  
   console.log("Paso 7", personas);
 
   // Repaso
   personas.forEach((t) => {
-    console.log(t);
+    console.log("forEach ", t);
   });
 
   for (let i = 0; i < personas.length; i++) {
-    console.log(personas[i]);
+    console.log("for normal ",personas[i]);
   }
 }
 
