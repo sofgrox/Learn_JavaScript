@@ -175,15 +175,16 @@ function ejercicioSiete() {
  * While
  */
 function ejercicioOcho() {
-  let contador = 0;
+  let contador = 10;
 
   while (contador < 10) {
     console.log(`Numero : ${contador}`);
     contador++; // contador = contador + 1
   }
 
-  // respuesta correcta
+  //respuesta correcta
   let respuesta = prompt("Ingresa la capital del quindio");
+  
   respuesta = respuesta.toLowerCase();
 
   while (respuesta !== "armenia") {
@@ -197,14 +198,17 @@ function ejercicioOcho() {
  * Do While
  */
 function ejercicioNueve() {
-  // respuesta correcta
-  let respuesta = prompt("Ingresa la capital del quindio");
-  respuesta = respuesta.toLowerCase();
+  let contador = 10;
 
-  while (respuesta !== "armenia") {
-    alert("Intentalo de nuevo");
-    respuesta = prompt("Ingresa la capital del quindio").toLowerCase();
+  do{
+    console.log(`Numero : ${contador}`);
+    contador++; // contador = contador + 1
   }
+  while (contador < 10) 
+    
+  
+    
+  
 }
 
 /**
