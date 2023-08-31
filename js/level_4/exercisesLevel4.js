@@ -7,6 +7,7 @@ const btnExerciseSix = document.getElementById("btnExercise6");
 const btnExerciseSeven = document.getElementById("btnExercise7");
 const btnExerciseEight = document.getElementById("btnExercise8");
 const btnExerciseNine = document.getElementById("btnExercise9");
+const btnExerciseTen = document.getElementById("btnExercise10");
 
 /**
  * Ejercicio 1:
@@ -184,7 +185,7 @@ function ejercicioOcho() {
 
   //respuesta correcta
   let respuesta = prompt("Ingresa la capital del quindio");
-  
+
   respuesta = respuesta.toLowerCase();
 
   while (respuesta !== "armenia") {
@@ -200,15 +201,18 @@ function ejercicioOcho() {
 function ejercicioNueve() {
   let contador = 10;
 
-  do{
+  do {
     console.log(`Numero : ${contador}`);
     contador++; // contador = contador + 1
-  }
-  while (contador < 10) 
-    
-  
-    
-  
+  } while (contador < 10);
+}
+
+/**
+ * Ejercicio 10
+ * Input
+ */
+function ejercicioDiez() {
+  alert("entro");
 }
 
 /**
@@ -241,4 +245,7 @@ btnExerciseEight.onclick = function () {
 };
 btnExerciseNine.onclick = function () {
   ejercicioNueve();
+};
+btnExerciseTen.onclick = function () {
+  ejercicioDiez();
 };
