@@ -212,7 +212,10 @@ function ejercicioNueve() {
  * Input
  */
 function ejercicioDiez() {
-  alert("entro");
+  // traemos el input
+  const campoTexto = document.getElementById("inputText");
+  // Agregar texto al input
+  campoTexto.value = "Hola Input Text"
 }
 
 /**
