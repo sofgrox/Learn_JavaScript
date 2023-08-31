@@ -219,12 +219,14 @@ function ejercicioDiez() {
   //campoTexto.value = "Hola Input Text"
 
   // Obtener valor del input
-  const texto = campoTexto.value
+  const texto = campoTexto.value;
+  campoTextoH2.innerHTML = texto;
   
+  // timer en Javascript
+  setTimeout(() => {
+    campoTextoH2.innerHTML = "";
+  }, 2000);
   
-  campoTextoH2.innerHTML = texto
-
-
 }
 
 /**
