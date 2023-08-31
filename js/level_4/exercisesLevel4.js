@@ -214,8 +214,17 @@ function ejercicioNueve() {
 function ejercicioDiez() {
   // traemos el input
   const campoTexto = document.getElementById("inputText");
+  const campoTextoH2 = document.getElementById("textoHtml");
   // Agregar texto al input
-  campoTexto.value = "Hola Input Text"
+  //campoTexto.value = "Hola Input Text"
+
+  // Obtener valor del input
+  const texto = campoTexto.value
+  
+  
+  campoTextoH2.innerHTML = texto
+
+
 }
 
 /**
