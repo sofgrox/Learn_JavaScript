@@ -22,15 +22,20 @@ function exerciseOne() {
  */
 function exerciseTwo() {
   // Pedimos el numero de operation entre 1 y 4  y lo convertimos a entero
-  const operation = parseInt(
+  let operation = parseInt(
     prompt(
       "OPERACIONES MATEMATICAS BÁSICAS: \n Ingresa 1 para sumar. \n Ingresa 2 para restar. \n Ingresa 3 para multiplicar. \n Ingresa 4 para Dividir."
     )
   );
   // Validamos que la operación no sea errada o mayor 4 o menor que 1
   // isNan() nos permite validar el el valor de la variable es un NaN osea que no ingresaron numeros
-  if (isNaN(operation) || operation > 4 || operation < 1) {
-    return alert("Opcion invalida, favor ingresar entre 1 y 4"); // return nos devuelve el alert y no permite seguir ejecutando el código
+  while (isNaN(operation) || operation > 4 || operation < 1) {
+     alert("Opcion invalida, favor ingresar entre 1 y 4"); // return nos devuelve el 
+      operation = parseInt(
+      prompt(
+        "OPERACIONES MATEMATICAS BÁSICAS: \n Ingresa 1 para sumar. \n Ingresa 2 para restar. \n Ingresa 3 para multiplicar. \n Ingresa 4 para Dividir."
+      )
+    );
   }
   // Pedimos los numeros
   const num1 = parseFloat(prompt("Ingrese numero 1"));
