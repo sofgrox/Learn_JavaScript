@@ -25,4 +25,6 @@ const btnIgual = document.getElementById("btnIgual");
 const btnPunto = document.getElementById("btnPunto");
 
 // onclick
-btn1.onclick = function () {};
+btn1.onclick = function () {
+    inputNumber.value += "1" // Prueba
+};
