@@ -26,5 +26,5 @@ const btnPunto = document.getElementById("btnPunto");
 
 // onclick
 btn1.onclick = function () {
-    inputNumber.value += "1" // Prueba
+  inputNumber.value += "1"; // Prueba
 };
