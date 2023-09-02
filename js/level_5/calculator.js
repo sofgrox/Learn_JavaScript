@@ -26,57 +26,77 @@ const btnPunto = document.getElementById("btnPunto");
 // Numbers
 let num1 = 0;
 let num2 = 0;
-let operator = ""
+let operator = "";
 
 // Funciones botones numeros
 function boton1() {
-  inputNumber.value += "1"
+  inputNumber.value += "1";
 }
 function boton2() {
-  inputNumber.value += "2"
+  inputNumber.value += "2";
 }
 function boton3() {
-  inputNumber.value += "3"
+  inputNumber.value += "3";
 }
 function boton4() {
-  inputNumber.value += "4"
+  inputNumber.value += "4";
 }
 function boton5() {
-  inputNumber.value += "5"
+  inputNumber.value += "5";
 }
 function boton6() {
-  inputNumber.value += "6"
+  inputNumber.value += "6";
 }
 function boton7() {
-  inputNumber.value += "7"
+  inputNumber.value += "7";
 }
 function boton8() {
-  inputNumber.value += "8"
+  inputNumber.value += "8";
 }
 function boton9() {
-  inputNumber.value += "9"
+  inputNumber.value += "9";
 }
 function boton0() {
-  inputNumber.value += "0"
+  inputNumber.value += "0";
 }
 // Operadores
 function botonSuma() {
   if (inputNumber.value !== "") {
-    num1 = parseFloat(inputNumber.value)
-    operator = "+"
-    inputNumber.value = ""
-    console.log(num1, operator); // LOG
-  } else {
+    num1 = parseFloat(inputNumber.value);
+    operator = "+";
+    inputNumber.value = "";
+  }
+}
+function botonIgual() {
+  if (inputNumber.value !== "" && operator !== ""  ) {
+
+    num2 = parseFloat(inputNumber.value);
+    console.log(num1, operator, num2); // LOG -
+    operaciones(num1, num2, operator);
     
   }
- 
+}
+
+
+// Operaciones
+function operaciones(numero1, numero2, operador) {
+  switch (operador) {
+    case "+":
+      inputNumber.value = numero1 + numero2
+      break;
+  
+    default:
+      break;
+  }
 }
 
 // Clear all
 function botonC() {
-  inputNumber.value = ""
+  inputNumber.value = "";
+  num1 = 0
+  num2 = 0
+  operator = ""
 }
-
 
 // onclick
 btn1.onclick = function () {
@@ -111,6 +131,9 @@ btn0.onclick = function () {
 };
 btnSuma.onclick = function () {
   botonSuma();
+};
+btnIgual.onclick = function () {
+  botonIgual();
 };
 btnC.onclick = function () {
   botonC();
