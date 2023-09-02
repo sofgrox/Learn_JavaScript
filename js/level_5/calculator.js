@@ -67,35 +67,68 @@ function botonSuma() {
     inputNumber.value = "";
   }
 }
+function botonResta() {
+  if (inputNumber.value !== "") {
+    num1 = parseFloat(inputNumber.value);
+    operator = "-";
+    inputNumber.value = "";
+  }
+}
+function botonMultiplicar() {
+  if (inputNumber.value !== "") {
+    num1 = parseFloat(inputNumber.value);
+    operator = "*";
+    inputNumber.value = "";
+  }
+}
+function botonDividir() {
+  if (inputNumber.value !== "") {
+    num1 = parseFloat(inputNumber.value);
+    operator = "/";
+    inputNumber.value = "";
+  }
+}
 function botonIgual() {
-  if (inputNumber.value !== "" && operator !== ""  ) {
-
+  if (inputNumber.value !== "" && operator !== "") {
     num2 = parseFloat(inputNumber.value);
     console.log(num1, operator, num2); // LOG -
     operaciones(num1, num2, operator);
-    
   }
 }
 
-
 // Operaciones
 function operaciones(numero1, numero2, operador) {
+ 
   switch (operador) {
     case "+":
-      inputNumber.value = numero1 + numero2
+      inputNumber.value = numero1 + numero2;
       break;
-  
+    case "-":
+      inputNumber.value = numero1 - numero2;
+      break;
+    case "*":
+      inputNumber.value = numero1 * numero2;
+      break;
+    case "/":
+      if (num2 === 0) {
+        inputNumber.value = "No se puede dividir entre cero";
+      } else {
+        inputNumber.value = numero1 / numero2;
+      }
+      break;
+
     default:
       break;
   }
+ 
 }
 
 // Clear all
 function botonC() {
   inputNumber.value = "";
-  num1 = 0
-  num2 = 0
-  operator = ""
+  num1 = 0;
+  num2 = 0;
+  operator = "";
 }
 
 // onclick
@@ -132,6 +165,16 @@ btn0.onclick = function () {
 btnSuma.onclick = function () {
   botonSuma();
 };
+btnResta.onclick = function () {
+  botonResta();
+};
+btnMulti.onclick = function () {
+  botonMultiplicar();
+};
+btnDiv.onclick = function () {
+  botonDividir();
+};
+
 btnIgual.onclick = function () {
   botonIgual();
 };
