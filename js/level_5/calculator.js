@@ -23,8 +23,95 @@ const btnC = document.getElementById("btnC");
 const btnDel = document.getElementById("btnDel");
 const btnIgual = document.getElementById("btnIgual");
 const btnPunto = document.getElementById("btnPunto");
+// Numbers
+let num1 = 0;
+let num2 = 0;
+let operator = ""
+
+// Funciones botones numeros
+function boton1() {
+  inputNumber.value += "1"
+}
+function boton2() {
+  inputNumber.value += "2"
+}
+function boton3() {
+  inputNumber.value += "3"
+}
+function boton4() {
+  inputNumber.value += "4"
+}
+function boton5() {
+  inputNumber.value += "5"
+}
+function boton6() {
+  inputNumber.value += "6"
+}
+function boton7() {
+  inputNumber.value += "7"
+}
+function boton8() {
+  inputNumber.value += "8"
+}
+function boton9() {
+  inputNumber.value += "9"
+}
+function boton0() {
+  inputNumber.value += "0"
+}
+// Operadores
+function botonSuma() {
+  if (inputNumber.value !== "") {
+    num1 = parseFloat(inputNumber.value)
+    operator = "+"
+    inputNumber.value = ""
+    console.log(num1, operator); // LOG
+  } else {
+    
+  }
+ 
+}
+
+// Clear all
+function botonC() {
+  inputNumber.value = ""
+}
+
 
 // onclick
 btn1.onclick = function () {
-  inputNumber.value += "1"; // Prueba
+  boton1();
+};
+btn2.onclick = function () {
+  boton2();
+};
+btn3.onclick = function () {
+  boton3();
+};
+btn4.onclick = function () {
+  boton4();
+};
+btn5.onclick = function () {
+  boton5();
+};
+btn6.onclick = function () {
+  boton6();
+};
+btn7.onclick = function () {
+  boton7();
+};
+btn8.onclick = function () {
+  boton8();
+};
+btn9.onclick = function () {
+  boton9();
+};
+btn0.onclick = function () {
+  boton0();
+};
+btnSuma.onclick = function () {
+  botonSuma();
+};
+btnC.onclick = function () {
+  botonC();
 };
