@@ -181,3 +181,8 @@ btnIgual.onclick = function () {
 btnC.onclick = function () {
   botonC();
 };
+/** 
+btnC.addEventListener('click', function () { 
+  botonC();
+})
+*/

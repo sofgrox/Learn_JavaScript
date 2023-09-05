@@ -5,7 +5,7 @@ let num1 = 0;
 let num2 = 0;
 let operator = "";
 
-// botones
+// botones numericos
 const buttons = [
   { id: "btn1", value: "1" },
   { id: "btn2", value: "2" },
@@ -18,7 +18,33 @@ const buttons = [
   { id: "btn9", value: "9" },
   { id: "btn0", value: "0" },
 ];
-
+// botones operaciones
+const operations = [
+  { id: "btnSuma", value: "+" },
+  { id: "btnResta", value: "-" },
+  { id: "btnMulti", value: "*" },
+  { id: "btnDiv", value: "/" },
+];
+// Recorrer botones
 buttons.forEach((e) => {
-    document.getElementById(e.id).addEventListener('click', () => appendToInput(e.value))
+  document
+    .getElementById(e.id)
+    .addEventListener("click", () => appendToInput(e.value));
 });
+// operaciones
+operations.forEach((e) => {
+  document
+    .getElementById(e.id)
+    .addEventListener("click", () => setOperation(e.value));
+});
+// funciones
+function appendToInput(value) {
+  inputNumber.value += value;
+}
+function setOperation(value) {
+  if (inputNumber.value !== "") {
+    num1 = parseFloat(inputNumber.value);
+    operator = value;
+    inputNumber.value = "";
+  } 
+}
