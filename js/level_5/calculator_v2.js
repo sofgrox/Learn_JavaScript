@@ -46,5 +46,39 @@ function setOperation(value) {
     num1 = parseFloat(inputNumber.value);
     operator = value;
     inputNumber.value = "";
-  } 
+  }
 }
+// ejecutar operaciones
+function operaciones() {
+  if (inputNumber.value !== "" && operator !== "") {
+    num2 = parseFloat(inputNumber.value);
+    switch (operator) {
+      case "+":
+        inputNumber.value = num1 + num2;
+        break;
+      case "-":
+        inputNumber.value = num1 - num2;
+        break;
+      case "*":
+        inputNumber.value = num1 * num2;
+        break;
+      case "/":
+        if (num2 === 0) {
+          inputNumber.value = "No se puede dividir entre cero";
+        } else {
+          inputNumber.value = num1 / num2;
+        }
+        break;
+    }
+  }
+}
+// Clear all
+function botonC() {
+  inputNumber.value = "";
+  num1 = 0;
+  num2 = 0;
+  operator = "";
+}
+// enventos
+document.getElementById("btnIgual").addEventListener("click", () => operaciones());
+document.getElementById("btnC").addEventListener("click", () => botonC());
