@@ -4,6 +4,11 @@ const inputNumber = document.getElementById("inputNumber");
 let num1 = 0;
 let num2 = 0;
 let operator = "";
+// variables de historial
+let num1Temp = 0;
+let num2Temp = 0;
+let operatorTemp = "";
+let resultTemp = 0;
 
 // botones numericos
 const buttons = [
@@ -63,13 +68,16 @@ function operaciones() {
         inputNumber.value = num1 * num2;
         break;
       case "/":
-        if (num2 === 0) {
-          inputNumber.value = "No se puede dividir entre cero";
-        } else {
-          inputNumber.value = num1 / num2;
-        }
+        inputNumber.value =
+          num2 === 0 ? "No se puede dividir entre cero" : num1 / num2;
         break;
     }
+    operator = 0;
+    num1 = 0;
+    num2 = 0;
+    setTimeout(() => {
+      inputNumber.value = "";
+    }, 3000);
   }
 }
 // Clear all
@@ -80,5 +88,7 @@ function botonC() {
   operator = "";
 }
 // enventos
-document.getElementById("btnIgual").addEventListener("click", () => operaciones());
+document
+  .getElementById("btnIgual")
+  .addEventListener("click", () => operaciones());
 document.getElementById("btnC").addEventListener("click", () => botonC());
