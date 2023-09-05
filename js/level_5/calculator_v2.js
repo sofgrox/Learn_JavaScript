@@ -18,3 +18,7 @@ const buttons = [
   { id: "btn9", value: "9" },
   { id: "btn0", value: "0" },
 ];
+
+buttons.forEach((e) => {
+    document.getElementById(e.id).addEventListener('click', () => appendToInput(e.value))
+});
