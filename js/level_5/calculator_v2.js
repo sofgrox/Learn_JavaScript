@@ -44,7 +44,12 @@ operations.forEach((e) => {
 });
 // funciones
 function appendToInput(value) {
-  inputNumber.value += value;
+  if (num2) {
+    num2 = 0;
+    inputNumber.value = value;
+  } else {
+    inputNumber.value += value;
+  }
 }
 function setOperation(value) {
   if (inputNumber.value !== "") {
@@ -74,10 +79,6 @@ function operaciones() {
     }
     operator = 0;
     num1 = 0;
-    num2 = 0;
-    setTimeout(() => {
-      inputNumber.value = "";
-    }, 3000);
   }
 }
 // Clear all
