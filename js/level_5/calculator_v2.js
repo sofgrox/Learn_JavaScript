@@ -57,7 +57,7 @@ function setOperation(value) {
     operator = value;
     inputNumber.value = "";
     // Cache num1 y operator
-    document.getElementById("cache").innerHTML = num1 + " " + operator
+    document.getElementById("cache").innerHTML = num1 + " " + operator;
   }
 }
 // ejecutar operaciones
@@ -80,12 +80,25 @@ function operaciones() {
         break;
     }
     // cache
-    document.getElementById("cache").innerHTML += num2 + " = " + inputNumber.value
-   // limpiar
-    operator = 0;
-    num1 = 0;
+    document.getElementById("cache").innerHTML +=
+      num2 + " = " + inputNumber.value;
   }
 }
+const percent = () => {
+  if (num1 && operator && inputNumber.value) {
+    num2 = parseFloat(inputNumber.value);
+    inputNumber.value = num2 / 100;
+  }
+};
+const sqrt = () => {
+  if (inputNumber.value) {
+    num1 = parseFloat(inputNumber.value);
+    inputNumber.value = Math.sqrt(num1);
+  }
+};
+// punto
+// borrar caracter por caracter
+
 // Clear all
 function botonC() {
   inputNumber.value = "";
@@ -98,3 +111,9 @@ document
   .getElementById("btnIgual")
   .addEventListener("click", () => operaciones());
 document.getElementById("btnC").addEventListener("click", () => botonC());
+document
+  .getElementById("btnPorcentaje")
+  .addEventListener("click", () => percent());
+document.getElementById("btnRaiz").addEventListener("click", () => sqrt());
+
+//NOTA: historial razi cuadra y borrar casilla

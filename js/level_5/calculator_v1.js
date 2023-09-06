@@ -178,7 +178,7 @@ btnDiv.onclick = function () {
 btnIgual.onclick = function () {
   botonIgual();
 };
-btnC.onclick = function () {
+btnC.onclick =  () => {
   botonC();
 };
 
