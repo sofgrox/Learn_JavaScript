@@ -56,6 +56,8 @@ function setOperation(value) {
     num1 = parseFloat(inputNumber.value);
     operator = value;
     inputNumber.value = "";
+    // Cache num1 y operator
+    document.getElementById("cache").innerHTML = num1 + " " + operator
   }
 }
 // ejecutar operaciones
@@ -77,6 +79,9 @@ function operaciones() {
           num2 === 0 ? "No se puede dividir entre cero" : num1 / num2;
         break;
     }
+    // cache
+    document.getElementById("cache").innerHTML += num2 + " = " + inputNumber.value
+   // limpiar
     operator = 0;
     num1 = 0;
   }
