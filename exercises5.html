@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/level_5/calculator.css" />
+  </head>
+
+  <body>
+    <!-- Return home -->
+    <a class="back-home" href="./index.html">Return to Home</a>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+
+    <!-- Input -->
+    <section class="calculator">
+      <input type="text" id="inputNumber" aria-label="Calculator Input" />
+
+      <!-- buttons -->
+      <div class="button-grid">
+        <button id="btnPercentage">%</button>
+        <button id="btnCe">CE</button>
+        <button id="btnClear">C</button>
+        <button id="btnDel">DEL</button>
+        <button disabled>--</button>
+        <button disabled>--</button>
+        <button disabled>--</button>
+        <button id="btnDivide">/</button>
+        <button id="btn7">7</button>
+        <button id="btn8">8</button>
+        <button id="btn9">9</button>
+        <button id="btnMultiply">X</button>
+        <button id="btn4">4</button>
+        <button id="btn5">5</button>
+        <button id="btn6">6</button>
+        <button id="btnSubtract">-</button>
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+        <button id="btnSum">+</button>
+        <button id="btnSquareRoot">√</button>
+        <button id="btn0">0</button>
+        <button id="btnDecimal">.</button>
+        <button id="btnEqual">=</button>
+      </div>
+    </section>
+
+    <!-- History -->
+    <section class="operation-history">
+      <h2>Operation History</h2>
+      <div id="history" aria-live="polite"></div>
+    </section>
+
+    <!-- script -->
+    <script src="./js/level_5/calculator_v3.js"></script>
+  </body>
+</html>
