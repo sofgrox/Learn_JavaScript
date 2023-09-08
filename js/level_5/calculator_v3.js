@@ -23,6 +23,7 @@ const numericButtonsConfig = [
 ];
 
 const operationButtonsConfig = [
+  { id: "btnAdd", value: "+" },
   { id: "btnSubtract", value: "-" },
   { id: "btnMultiply", value: "*" },
   { id: "btnDivide", value: "/" },
