@@ -1,0 +1,92 @@
+/**
+* background-color: #595c5c;: Establece el color de fondo del cuerpo (body) del documento a un tono gris (#595c5c).
+* font-family: Arial, sans-serif;: Define la fuente principal del documento a "Arial". Si "Arial" no está disponible, se utilizará cualquier fuente sans-serif que esté disponible.
+*display: flex;: Establece el modelo de caja a "flex". Esto permite el diseño flexible de elementos hijos.
+* flex-direction: column;: Establece la dirección principal de los elementos hijos (flex items) en forma de columna.
+* align-items: center;: Centra horizontalmente los elementos hijos en el contenedor flex.
+* padding-top: 2em;: Añade un padding (relleno) en la parte superior del body equivalente a 2 veces el tamaño actual de la letra (por eso em).
+*/
+
+body {
+  background-color: #595c5c;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+}
+
+/** 
+* background-color: #add8e6;: Establece el color de fondo del botón a un tono azul claro (#add8e6).
+* width: 60px; y height: 60px;: Establece las dimensiones del botón a un cuadrado de 60x60 píxeles.
+* border: none;: Elimina el borde del botón.
+* border-radius: 8px;: Redondea las esquinas del botón con un radio de 8 píxeles.
+* color: #323131;: Define el color del texto dentro del botón a un tono gris oscuro (#323131).
+* cursor: pointer;: Cambia el cursor a una mano cuando se pasa por encima del botón, indicando que es un elemento clickeable.
+* font-size: 15px;: Define el tamaño de la letra del texto dentro del botón a 15 píxeles.
+* transition: background-color 0.3s;: Establece una transición en el color de fondo del botón cuando cambia, con una duración de 0.3 segundos.
+* ext-align: center;: Centra horizontalmente el texto dentro del botón.
+* line-height: 60px;: Establece la altura de línea del texto igual a la altura del botón, lo que centra verticalmente el texto.
+*/
+
+button {
+  background-color: #add8e6;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  color: #323131;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+  text-align: center;
+  line-height: 60px;
+}
+
+/**
+Se activa cuando el cursor se encuentra sobre un elemento button.
+*color: #ffffff;: Cambia el color del texto del botón a blanco cuando se pasa el cursor por encima.
+*background-color: #4b7d8e;: Cambia el color de fondo del botón a un tono azul oscuro (#4b7d8e) cuando se pasa el cursor por encima.
+*/
+button:hover {
+  color: #ffffff;
+  background-color: #4b7d8e;
+}
+
+/**
+.cache: Selecciona todos los elementos con la clase "cache".
+* font-size: 10px;: Establece el tamaño de letra a 10 píxeles.
+* color: #f9ea14;: Define el color del texto a un tono amarillo (#f9ea14
+*/
+.cache {
+  font-size: 10px;
+  color: #f9ea14;
+}
+
+/**
+* .button-grid: Selecciona todos los elementos con la clase "button-grid".
+* display: grid;: Establece el modelo de caja a "grid", permitiendo un diseño basado en grillas.
+* grid-template-columns: repeat(4, 1fr);: Define una grilla con 4 columnas de igual ancho. 1fr es una unidad que representa una fracción del espacio disponible.
+* gap: 10px;: Establece un espacio de 10 píxeles entre los elementos de la grilla.
+* margin-top: 1em;: Añade un margen en la parte superior del contenedor grid equivalente a 1 vez el tamaño actual de la letra.
+*/
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 1em;
+}
+
+/**
+* .calculator input: Selecciona todos los elementos input que sean descendientes directos o indirectos de un elemento con la clase "calculator".
+width: 250px;: Establece un ancho fijo de 250 píxeles para el elemento input.
+* padding: 10px;: Añade un relleno de 10 píxeles alrededor del contenido interno del input.
+* font-size: 18px;: Define el tamaño de letra del texto dentro del input a 18 píxeles.
+* margin-bottom: 10px;: Añade un margen en la parte inferior del input de 10 píxeles.
+*/
+.calculator input {
+  width: 250px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}

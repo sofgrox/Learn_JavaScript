@@ -1,59 +1,77 @@
+<!-- Esta línea define el tipo de documento y la versión de HTML. Específicamente, anuncia que el documento es HTML5. -->
 <!DOCTYPE html>
+<!-- Este es el elemento raíz del documento HTML.
+El atributo lang="en" especifica que el lenguaje principal del contenido es el inglés. -->
 <html lang="en">
+  <!-- Cabecera del documento donde van configuraciones que no ve el usuario -->
   <head>
+    <!-- <meta charset="UTF-8" />: Define el conjunto de caracteres que se utiliza en el documento. "UTF-8" es una codificación que puede representar cualquier carácter en el estándar Unicode. -->
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />: Es esencial para hacer que las páginas web sean responsivas. Define cómo se debe dimensionar y escalar el área visible. -->
+    <!-- width=device-width: Establece el ancho de la página para seguir el ancho de la pantalla del dispositivo. -->
+    <!-- initial-scale=1.0: Establece el nivel de zoom inicial cuando la página se carga por primera vez. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Define el título del documento, que aparece en la pestaña del navegador. -->
     <title>Calculator</title>
-    <link rel="stylesheet" href="./css/level_5/calculator.css" />
+    <!-- <link rel="stylesheet" href="./css/level_5/calculator_v3.css" />: Vincula una hoja de estilos externa al documento HTML. En este caso, está vinculando a "calculator_v3.css" dentro de una carpeta llamada "level_5" que está dentro de una carpeta llamada "css". -->
+    <link rel="stylesheet" href="./css/level_5/calculator_v3.css" />
   </head>
-
+  <!-- Es el contenedor principal para el contenido visible del documento. -->
   <body>
-    <!-- Return home -->
+    <!-- Define un enlace (hipervínculo) con la clase "back-home".
+href="./index.html": Especifica la URL a la que debe ir el enlace. En este caso, vincula al archivo "index.html" en el directorio actual.
+El texto visible del enlace es "Return to Home". -->
     <a class="back-home" href="./index.html">Return to Home</a>
+    <!-- Define la cabecera del contenido.
+Contiene un título principal (<h1>) con el texto "Calculator". -->
     <header>
       <h1>Calculator</h1>
     </header>
+    <!-- Representa el contenido principal del documento. Todo lo que está dentro de este elemento es el contenido único de la página. -->
+    <main>
+      <!-- Define una sección con la clase "calculator".
+Contiene un <input> que es donde el usuario podrá ingresar o ver números y una serie de botones que representan las teclas de la calculadora. -->
+      <section class="calculator">
+        <input type="text" id="inputNumber" aria-label="Calculator Input" />
+        <!-- buttons -->
+        <div class="button-grid">
+          <button id="btnPercentage">%</button>
+          <button id="btnCe">CE</button>
+          <button id="btnClear">C</button>
+          <button id="btnDel">DEL</button>
+          <button disabled>--</button>
+          <button disabled>--</button>
+          <button disabled>--</button>
+          <button id="btnDivide">/</button>
+          <button id="btn7">7</button>
+          <button id="btn8">8</button>
+          <button id="btn9">9</button>
+          <button id="btnMultiply">X</button>
+          <button id="btn4">4</button>
+          <button id="btn5">5</button>
+          <button id="btn6">6</button>
+          <button id="btnSubtract">-</button>
+          <button id="btn1">1</button>
+          <button id="btn2">2</button>
+          <button id="btn3">3</button>
+          <button id="btnSum">+</button>
+          <button id="btnSquareRoot">√</button>
+          <button id="btn0">0</button>
+          <button id="btnDecimal">.</button>
+          <button id="btnEqual">=</button>
+        </div>
+      </section>
 
-    <!-- Input -->
-    <section class="calculator">
-      <input type="text" id="inputNumber" aria-label="Calculator Input" />
+      <!-- Define una sección con la clase "operation-history".
+Contiene un título (<h2>) con el texto "Operation History" y un <div> que presumiblemente mostrará un historial de operaciones. -->
+      <section class="operation-history">
+        <h2>Operation History</h2>
+        <div id="history" aria-live="polite"></div>
+      </section>
+    </main>
 
-      <!-- buttons -->
-      <div class="button-grid">
-        <button id="btnPercentage">%</button>
-        <button id="btnCe">CE</button>
-        <button id="btnClear">C</button>
-        <button id="btnDel">DEL</button>
-        <button disabled>--</button>
-        <button disabled>--</button>
-        <button disabled>--</button>
-        <button id="btnDivide">/</button>
-        <button id="btn7">7</button>
-        <button id="btn8">8</button>
-        <button id="btn9">9</button>
-        <button id="btnMultiply">X</button>
-        <button id="btn4">4</button>
-        <button id="btn5">5</button>
-        <button id="btn6">6</button>
-        <button id="btnSubtract">-</button>
-        <button id="btn1">1</button>
-        <button id="btn2">2</button>
-        <button id="btn3">3</button>
-        <button id="btnSum">+</button>
-        <button id="btnSquareRoot">√</button>
-        <button id="btn0">0</button>
-        <button id="btnDecimal">.</button>
-        <button id="btnEqual">=</button>
-      </div>
-    </section>
-
-    <!-- History -->
-    <section class="operation-history">
-      <h2>Operation History</h2>
-      <div id="history" aria-live="polite"></div>
-    </section>
-
-    <!-- script -->
+    <!-- Vincula un archivo JavaScript externo al documento HTML.
+En este caso, está vinculando a "calculator_v3.js" que se encuentra en una carpeta llamada "level_5" que está dentro de una carpeta llamada "js". -->
     <script src="./js/level_5/calculator_v3.js"></script>
   </body>
 </html>
